@@ -1,12 +1,12 @@
 [project]
-name = "process-template"
-version = "0.3.0"
-description = "Add your description here"
+name = "virk-client"
+version = "0.1.0"
+description = "Python bibliotek til at tilgå virk REST services. Kræver aftale + certifikat til auth."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "automation-server-client",
+    "httpx>=0.28.1",
+    "pytest>=9.0.3",
+    "ruff>=0.14.13",
 ]
 
-[tool.uv.sources]
-automation-server-client = { git = "https://github.com/odense-rpa/automation-server-client.git", tag = "v0.3.0" }
