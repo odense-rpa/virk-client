@@ -3,8 +3,9 @@ import ssl
 
 
 class VirkClient:
-    def __init__(self, base_url: str, certifikat_sti: str, certifikat_nøglefil: str):
-        self.base_url = base_url
+    def __init__(self, certifikat_sti: str, certifikat_nøglefil: str):
+        # Public url
+        self.base_url = "https://erst-api.virk.dk/distribution-service-cvr-ekstern"
 
         # Build SSL context explicitly so the client cert chain is loaded
         # the same way as in integrations that use ssl.load_cert_chain.
