@@ -3,3 +3,7 @@
 .key
 .crt
 /certificates
+
+# Python-cachefiler
+__pycache__/
+*.py[cod]
